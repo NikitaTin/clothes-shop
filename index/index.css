@@ -1,19 +1,54 @@
+@font-face{
+    font-family: bold;
+    src: url(F-Bold.ttf);
+}
+@font-face{
+    font-family: medium;
+    src: url(F-Medium.ttf);
+}
+@font-face{
+    font-family: regular;
+    src: url(F-Regular.ttf);
+}
+@font-face{
+    font-family: light;
+    src: url(F-Light.ttf);
+}
 body{
     display: grid;
     height: 100vh;
     grid-template-columns: 0.1fr 0.5fr 0.3fr 0.1fr;
     grid-template-rows: 0.2fr 0.8fr 0.2fr;
+    font-family: regular;
+    background: #EDE4D9 url(/background-vector.svg) no-repeat;
+    background-position-y: 316px;
+
 }
 .header{
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.header__logo-title{
+    font-family: bold;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+.header__nav-panel__button{
+    font-family: regular;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 .header__nav-panel{
+    grid-column: 3 / 4;
+    justify-self: end;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+    align-items: center;
 }
 .nav__button{
     text-transform: uppercase;
@@ -21,17 +56,54 @@ body{
 .article{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    align-self: flex-end;
     display: grid;
+    height: 80%;
     grid-template-rows: repeat(4, 1fr);
+    align-items: center;
 }
-.header__nav-panel{
-    grid-column: 3 / 4;
+.article__title{
+    font-family: medium;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+.article__text{
+    font-family: light;
+    font-size: 20px;
+}
+.article__button{
+    font-family: medium;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 8px 0;
+    width: 180px;
+    height: 34px;
+    text-align: center;
+    color: white;
+    background: black;
+}
+.article__desc::before{
+    content: "-";
+}
+.body-pic{
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    width: 600px;
 }
 .footer{
     grid-column: 3 / 4;
     grid-row: 3 / 4;
     justify-self: right;
+    align-self: flex-end;
 }
-.footer__social-icon{
-    display: inline-block;
+.footer__footer-link{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-end;
+}
+.footer__footer-link__social-icon{
+    min-width: 32px;
+    min-height: 32px;
+    margin: 48px 4px 0 4px;
 }
