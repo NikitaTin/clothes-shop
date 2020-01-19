@@ -1,0 +1,37 @@
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.1fr 0.5fr 0.3fr 0.1fr;
+    grid-template-rows: 0.2fr 0.8fr 0.2fr;
+}
+.header{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.header__nav-panel{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+.nav__button{
+    text-transform: uppercase;
+}
+.article{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+.header__nav-panel{
+    grid-column: 3 / 4;
+}
+.footer{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    justify-self: right;
+}
+.footer__social-icon{
+    display: inline-block;
+}
