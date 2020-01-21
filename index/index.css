@@ -26,6 +26,9 @@
 }
 .header__logo-title{
     grid-column: 2 / 3;
+    /* self */
+    font-family: bold;
+    text-transform: uppercase;
 }
 .header__nav-panel{
     grid-column: 3 / 4;
@@ -34,7 +37,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    margin-left: 20px;
+   margin-left: 20px;
+}
+.header__nav-panel__button{
+    font-family: light;
+    text-transform: uppercase;
 }
 /* #03 arcticle and content */
 .article{
@@ -57,12 +64,24 @@
 .text{
     max-width: 400px;
 }
-/* #06 article element align */
+/* #06 article element, align */
+.article__title{
+    font-family: medium;
+    text-transform: uppercase;
+}
+.article__text{
+    font-family: light;
+}
 .article__button{
     align-self: center;
+    /* self */
+    font-family: regular;
+    text-transform: uppercase;
 }
 .article__desc{
     align-self: flex-end;
+    /* self */
+    font-family: light;
 }
 /* #07 footer link board */
 .footer__footer-link{
