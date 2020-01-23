@@ -24,3 +24,5 @@
     Создание сетки из 3 колонок.
 ###08 -social link icon
     Ограничение размера иконки.
+###09 - index picture with absolute position
+    Фоновое изображение и шторка.
