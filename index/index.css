@@ -124,3 +124,8 @@
     width: 100vw;
     height: 50px;
 }
+/* #10 mobile style */
+.header__nav-mobile{
+    margin-top: 4px;
+    display: none;
+}

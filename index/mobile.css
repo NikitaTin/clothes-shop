@@ -1,0 +1,22 @@
+@media(max-width: 600px){
+    .header__nav-panel{
+        display: none;
+    }
+    .header{
+        width: 100%;
+        grid-template-columns: minmax(15px, 0.1fr) 1fr 36px minmax(15px, 0.1fr);
+    }
+    .header__nav-mobile{
+        display: block;
+    }
+    .index__pic__part{
+        bottom: -54px;
+    }
+    .article__title{
+        font-size: 32px;
+        align-self: center;
+    }
+    .article__button{
+        font-family: medium;
+    }
+}
